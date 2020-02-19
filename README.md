@@ -1,2 +1,7 @@
 # scDiff_example
-Example scripts demonstrating scDiff (Simone Tiberi) with HDCytoData datasets
+
+Examples demonstrating `scDiff` (developed by Simone Tiberi) for differential testing, using CyTOF datasets from `HDCytoData` package.
+
+Work in progress.
+
+
