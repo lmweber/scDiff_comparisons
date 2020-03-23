@@ -242,10 +242,10 @@ for (s in 1:length(rep_names)) {
 
 # names of output objects from this script (to save or use in next script)
 
-out_diffcyt_DS_limma_null
-runtime_diffcyt_DS_limma_null
-out_clusters_diffcyt_DS_limma_null
-out_objects_diffcyt_DS_limma_null
+#out_diffcyt_DS_limma_null
+#runtime_diffcyt_DS_limma_null
+#out_clusters_diffcyt_DS_limma_null
+#out_objects_diffcyt_DS_limma_null
 
 
 
