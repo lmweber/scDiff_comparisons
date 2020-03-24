@@ -1,4 +1,4 @@
-# scDiff_comparisons
+# scDiff comparisons
 
 This repository contains scripts to compare `scDiff` (developed by Simone Tiberi) with `diffcyt` methods (Weber et al. 2019), using CyTOF datasets previously used for the `diffcyt` evaluations (Weber et al. 2019) and distributed via the [`HDCytoData` package](https://bioconductor.org/packages/HDCytoData) (Weber and Soneson, 2019).
 
