@@ -17,7 +17,7 @@ library(HDCytoData)
 # Load datasets
 ###############
 
-# Load null simulation datasets from HDCytoData package
+# Load data from HDCytoData package
 
 data_null_sims <- list(
   rep1 = Weber_BCR_XL_sim_null_rep1_SE(), 
@@ -139,7 +139,8 @@ for (s in 1:length(rep_names)) {
     
     # set up design matrix
     # note: include fixed effects for 'patient_id'
-    design <- createDesignMatrix(metadata(d_se)$experiment_info, cols_design = 1:2)
+    design <- createDesignMatrix(metadata(d_se)$experiment_info, 
+                                 cols_design = c("group_id", "patient_id"))
     design
     
     # set up contrast matrix
