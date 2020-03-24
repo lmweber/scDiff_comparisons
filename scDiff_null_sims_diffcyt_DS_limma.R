@@ -3,9 +3,8 @@
 # Lukas Weber, Mar 2020
 ######################################
 
-# Script to run scDiff and diffcyt methods on null simulations from diffcyt
-# paper (using Weber_BCR_XL_sim_null datasets, which are based on the original
-# Bodenmiller_BCR_XL dataset)
+# Script to run diffcyt methods on null simulations using datasets from
+# HDCytoData package (Weber_BCR_XL_sim)
 
 
 library(diffcyt)
@@ -148,7 +147,7 @@ for (s in 1:length(rep_names)) {
     contrast
     
     # run tests
-    res <- testDS_limma(d_counts, d_medians, design, contrast, path = ".")
+    res <- testDS_limma(d_counts, d_medians, design, contrast, plot = FALSE)
     
   })
   
@@ -188,8 +187,7 @@ for (s in 1:length(rep_names)) {
   # (ROC curves etc) are based on pS6 in B cells only.
   
   
-  # identify B cells (these contain the true differential signal; from both 'base' and
-  # 'spike' conditions)
+  # identify B cells (these contain the true differential signal)
   is_B_cell <- rowData(d_se)$B_cell
   
   
