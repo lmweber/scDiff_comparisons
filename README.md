@@ -6,11 +6,16 @@ This repository contains scripts to compare `scDiff` (developed by Simone Tiberi
 ## Contents
 
 - [example](example/): directory containing small example script showing how to run `scDiff`
-- [scripts](scripts/): scripts to run `diffcyt` methods on `Weber_BCR_XL_sim` benchmark datasets from the `HDCytoData` package
+- [scripts/DS](scripts/DS): scripts to run `diffcyt-DS` methods (i.e. methods for differential state testing) on `Weber_BCR_XL_sim` benchmark datasets from the `HDCytoData` package
 
     - main simulations
     - null simulations
     - 'less distinct' simulations
+
+- [scripts/DA](scripts/DA): scripts to run `diffcyt-DA` methods (i.e. methods for differential abundance testing) on `Weber_AML_sim` benchmark datasets from the `HDCytoData` package
+
+    - main simulations
+
 
 
 ## Additional details
